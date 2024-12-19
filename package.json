@@ -4,18 +4,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deployDeployFundMe_sepolia": "npx hardhat run scripts/deployFundMe.js --network sepolia",
-    "deployDeployFundMe": "npx hardhat run scripts/deployFundMe.js"
+    "deployFundMeToSepolia": "npx hardhat run scripts/deployFundMe.js --network sepolia",
+    "deployFundMeWithCusTask": "npx hardhat  deploy-fundme --network sepolia",
+    "interactFundMeWithCusTask": "npx hardhat  interact-fundme --addr   0x885750841dc75E8BD202421891684E981C8EBA7a --network sepolia",
+    "deployFundMe": "npx hardhat run scripts/deployFundMe.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@chainlink/contracts": "^1.3.0",
+    "@chainlink/contracts": "^1.0.0",
     "@chainlink/env-enc": "^1.0.5",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@nomicfoundation/hardhat-verify": "^2.0.12",
-    "dotenv": "^16.4.7",
-    "hardhat": "^2.22.17"
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.2"
   }
 }
